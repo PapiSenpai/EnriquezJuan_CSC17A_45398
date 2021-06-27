@@ -1,7 +1,7 @@
 /* 
  * File:   NumberAnalysis.cpp
  * Author: Juan Enriquez
- * Created on March 8, 2021, 2:33 PM
+ * Created on June 25, 2021, 2:33 PM
  */
 
 #include <iostream>
@@ -11,10 +11,10 @@
 using namespace std;
 
 // function prototypes
-double LowestNum(double array[], int count);
-double HighestNum(double array[], int count);
-double TotalSum(double array[], int count); 
-double AverageSum(double array[], int count);
+float LowestNum(float array[], int count);
+float HighestNum(float array[], int count);
+float TotalSum(float array[], int count); 
+float AverageSum(float array[], int count);
 
 
 /**********************************
@@ -31,7 +31,7 @@ int main()
     
     // Variables
     ifstream infile;
-    double array[SIZE];
+    float array[SIZE];
     int count = 0;
     int i; // counter
     
@@ -70,10 +70,10 @@ int main()
  * Function: LowestNum 
  * Finds the lowest number
  ***************************/
-double LowestNum(double array[], int count)
+float LowestNum(float array[], int count)
 {
     
-    double lowest = array[0];
+    float lowest = array[0];
     
     for (int i = 1; i < count; i++)
     {        
@@ -89,9 +89,9 @@ double LowestNum(double array[], int count)
  * Function: HighestNum 
  * Finds the highest number
  ***************************/
-double HighestNum(double array[], int count)
+float HighestNum(float array[], int count)
 {
-    double highest = array[0];
+    float highest = array[0];
     
     for (int i = 1; i < count ; i++)
     {
@@ -110,9 +110,9 @@ double HighestNum(double array[], int count)
  * Finds the total sum of 
  * numbers in the file 
  ***************************/
-double TotalSum (double array[], int count)
+float TotalSum (float array[], int count)
 {
-    double total = 0;
+    float total = 0;
     
     for (int i=0 ; i < count ; i++)
     {
@@ -126,16 +126,16 @@ double TotalSum (double array[], int count)
  * Finds the average of the 
  * numbers within the file
  ***************************/
-double AverageSum (double array[], int count)
+float AverageSum (float array[], int count)
 {
-    double sum = 0;
+    float sum = 0;
     
     for (int i=0 ; i < count ; i++)
     {
         sum += array[i];                
     }
     
-    double average = sum / count;
+    float average = sum / count;
     
     return average;
 }

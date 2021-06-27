@@ -1,22 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   main.cpp
  * Author: Juan Enriquez
  * Assignment: Hello World
  * 
- * Created on February 20, 2021, 6:25 PM
+ * Created on June 23, 2021, 5:00 PM
  */
 
 #include <iostream>
 
 
 /*
- * 
+ * Description: The purpose of this project is to output Hello World
  */
 int main() {
 

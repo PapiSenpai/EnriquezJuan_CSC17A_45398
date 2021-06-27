@@ -3,18 +3,19 @@
  * 7th Edition
  * Chapter :5
  * Problem: 5.11 Population
- * Created on March, 2021, 1:24 PM
+ * Created on June 26, 2021, 1:00 PM
  */
 
-#include <iostream>
-
-using namespace std;
-
 /*************************************
+ * Description: 
  * The purpose of this program is to
  * predict the rapid incline of our
  * population.
  *************************************/
+
+#include <iostream>
+using namespace std;
+
 int main() {
 
     // Data types and Value
@@ -54,7 +55,8 @@ int main() {
     // If statement to catch any invalid answers
     if (organism > 2 && daily_increase > 0 && days > 1)
     {
-        float percentage = daily_increase / 100; // what the equation will use as the percent increase
+        float percentage = daily_increase / 100; // what the equation will use
+                                                 // as the percent increase
         
         //for loop to log the days
         for (int counter = 1; counter <= days ; counter++ )

@@ -3,7 +3,7 @@
  * File:   MonthlySalesTax.cpp
  * Author: Juan Enriquez
  *
- * Created on February 21, 2021, 6:03 PM
+ * Created on June 24, 2021, 4:03 PM
  */
 
 #include <iostream>
@@ -12,19 +12,21 @@
 
 using namespace std;
 
-/******************************
- * Description:
- ******************************/
+/***********************************************
+ * Description: This program asks for the 
+ * month, and the amount of sales tax collected.
+ * It then calculates the tax.
+ ***********************************************/
 int main() {
 
     // Variables 
     string month;
     int year;
     int day;
-    double total; // total amount that was earned
-    double state_Tax = .04;
-    double county_Tax = .02;
-    double tax_Total = 1.06; // Var for both county and state tax
+    float total; // total amount that was earned
+    float state_Tax = .04;
+    float county_Tax = .02;
+    float tax_Total = 1.06; // Var for both county and state tax
     
     // Ask input from user
     cout << "What month is it?" << endl;
@@ -35,10 +37,10 @@ int main() {
     cin >> total;
     
     // calculations
-    double sales = total / tax_Total; // gets calculation for sales 
-    double TaxC = sales * county_Tax; // the amount taxed by the county
-    double TaxS = sales * state_Tax;  // the amount taxed by the state
-    double TotalTax = TaxC + TaxS;
+    float sales = total / tax_Total; // gets calculation for sales 
+    float TaxC = sales * county_Tax; // the amount taxed by the county
+    float TaxS = sales * state_Tax;  // the amount taxed by the state
+    float TotalTax = TaxC + TaxS;
     
     cout << setprecision(2) << fixed;
     

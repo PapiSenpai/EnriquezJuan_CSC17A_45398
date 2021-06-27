@@ -1,7 +1,7 @@
 /* 
  * Project: Binary String Search
  * Author: Juan Enriquez 
- * Created on March 6, 2022, 12:29 PM
+ * Created on June 25, 2021, 12:29 PM
  */
 
  #include <iostream>
@@ -14,8 +14,7 @@
  
  int main ()
  {
-     //
-     // Array Variables
+     // Array 
      const int size = 20;
      string names [size] = {"Collins, Bill", "Smith, Bart", "Allen, Jim",
                             "Griffin, Jim", "Stamey, Marty", "Rose, Geri",
@@ -24,13 +23,13 @@
                             "Weaver, Jim", "Pore, Bob", "Rutherford, Greg",
                             "Javens, Renee", "Harrison, Rose", "Setzer, Cathy",
                             "Pike, Gordon", "Holland, Beth"};
-    //
+    
     // Variables
     string employeeName;
     int results;
  
     cout << "Enter the name of the Employee you want to search.\n";
-    getline(cin, employeeName);
+    getline(cin, employeeName); // Accepts blank spaces
  
     selectionSort (names, size); // call function
     results = binarySearch (names, size, employeeName);
@@ -46,7 +45,7 @@
  
     for (int index = 0; index < size; index++)
     {
-        cout << index + 1 << right << setw(15) << names[index] << endl;
+        cout << index + 1 << right << setw(20) << names[index] << endl;
     }
      return 0;
  }
@@ -89,12 +88,12 @@ int binarySearch (string names[], const int size, string employeeName)
         last = size - 1,
         middle,
         position = -1;
-    bool found = false;
+    bool found {false};
  
         while (!found && first <= last)
         {
             middle = (first + last) / 2;
-            if (names[middle].compare (employeeName) == 0)
+            if (names[middle] == employeeName) // for strings,  we can use compare
             {
                 found = true;
                 position = middle;

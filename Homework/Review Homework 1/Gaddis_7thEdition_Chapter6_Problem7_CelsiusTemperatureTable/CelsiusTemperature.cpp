@@ -3,29 +3,29 @@
  * Author: Juan Enriquez
  * Project: Celsius Temperature Table
  *
- * Created on March 7, 2021, 5:33 PM
+ * Created on June 26, 2021, 10:33 AM
  */
 
-#include <iostream>
-#include <iomanip>
-
-using namespace std;
-
 /**************************************
- * The purpose of this project is to
+ * Description:
+ *  The purpose of this project is to
  * make a calculator that converts
  * temperature in Fahrenheit to Celsius
  * in a separate function.
  **************************************/
 
-double Celsius(double); // Prototype for the function Celsius
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+float Celsius(float); // Prototype for the function Celsius
 
 int main() 
 {
     // Datatypes and Values
     const int min_temp = 0, // Minimum temperature
               max_temp = 20; // Maximum temperature
-    double C;
+    float C;
     
     // OUTPUT
     cout << setprecision(2) << fixed;
@@ -46,9 +46,9 @@ int main()
  * Function that carries the equation
  * for Celsius
  ************************************/
-double Celsius(double num)
+float Celsius(float num)
 {
-    double c_temp;
+    float c_temp;
     c_temp = (5.0 / 9.0) * (num - 32.0);
     
     return c_temp;

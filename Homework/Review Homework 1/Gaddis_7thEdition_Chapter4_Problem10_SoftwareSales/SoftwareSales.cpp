@@ -2,7 +2,13 @@
  * File:   SoftwareSales.cpp
  * Author: Juan Enriquez
  *
- * Created on March 5, 2021, 9:40 PM
+ * Created on June 25, 2021, 6:00 PM
+ */
+
+/*
+ * Description: The purpose of this program is to 
+ * ask the user for amount of components bought and 
+ * calculates the amount to the right price.
  */
 
 #include <iostream>
@@ -13,7 +19,7 @@ using namespace std;
 int main() {
 
     // Variables
-    double package = 99;   //the cost of each package
+    float package = 99;   //the cost of each package
     int i;  // counter for if loop
     
     // Input
@@ -21,7 +27,7 @@ int main() {
     cin >> i;
 
     // The total cost of the sale
-    double total = i * package; 
+    float total = i * package; 
     
     // precision manipulator used to set 2 decimals
     cout << setprecision(2) << fixed;
