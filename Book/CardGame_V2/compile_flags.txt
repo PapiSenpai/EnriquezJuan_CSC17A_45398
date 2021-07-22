@@ -1,0 +1,3 @@
+-I"C:\Users\MSOS\OneDrive\Desktop\C++ For Codelite\C++Practice\CardGame_V2"
+-target
+i686-pc-windows-gnu

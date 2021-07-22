@@ -1,0 +1,40 @@
+North Division
+Quarter 1
+$4.00
+Quarter 2
+$1.00
+Quarter 3
+$5.00
+Quarter 4
+$3.00
+Total Sales of Quarter: $13.00
+South Division
+Quarter 1
+$5.00
+Quarter 2
+$4.00
+Quarter 3
+$15.00
+Quarter 4
+$3.00
+Total Sales of Quarter: $27.00
+East Division
+Quarter 1
+$5.00
+Quarter 2
+$1.00
+Quarter 3
+$6.00
+Quarter 4
+$8.00
+Total Sales of Quarter: $20.00
+West Division
+Quarter 1
+$1.00
+Quarter 2
+$5.00
+Quarter 3
+$68.00
+Quarter 4
+$8.00
+Total Sales of Quarter: $82.00

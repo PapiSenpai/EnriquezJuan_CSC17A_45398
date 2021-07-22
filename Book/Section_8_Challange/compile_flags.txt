@@ -1,0 +1,3 @@
+-I"C:\Users\MSOS\OneDrive\Desktop\C++ For Codelite\C++Practice\Section_8_Challange"
+-target
+i686-pc-windows-gnu
