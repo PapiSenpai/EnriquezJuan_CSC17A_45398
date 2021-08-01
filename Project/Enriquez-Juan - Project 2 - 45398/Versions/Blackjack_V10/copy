@@ -1,0 +1,8 @@
+// for loop that draws cards for each player until there are 2 cards
+        for(i=0;i<=numOfP;i++)
+        {  
+            for(j=0;j<2;j++)
+            {
+              p[i].setHand(deck,j);
+            }
+        }

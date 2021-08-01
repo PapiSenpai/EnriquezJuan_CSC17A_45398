@@ -1,0 +1,2 @@
+Fixed problem with the hand not being able to reset. All that is left now is to
+correct the win condition.

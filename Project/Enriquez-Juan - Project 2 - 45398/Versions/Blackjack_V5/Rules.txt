@@ -1,0 +1,10 @@
+********************************************************************************
+* BLACKJACK
+* GAME RULES:
+*   For the first round, each player has two cards each. Each player has the
+*   choice to draw more cards if they would want to. The first person to reach
+*   a score of 21 from their hand of cards wins instantly. An ace equals 11,
+*   a king, queen, and jack all equal 10. If the player goes over the score of
+*   21, then they have a busted hand. (If you have five cards, then that player 
+*   wins)
+********************************************************************************
